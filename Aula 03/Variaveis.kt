@@ -75,3 +75,15 @@
 //     println("Idade do Usuário : $idadeUsuario")
 //     println("Valor Total : $valor_Total")
 // }
+
+
+//Escopo de Variavel
+
+fun main(){
+    val nome = "Alice"
+    if(true){
+        val sobrenome = "Silva" //variavel só é visivel dentro deste bloco 
+        println("$nome $sobrenome")
+    }   
+    println("$nome $sobrenome") //Erro, A variavel  não está definida nesse escopo
+}
